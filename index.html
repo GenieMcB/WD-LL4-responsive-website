@@ -1,16 +1,209 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>LiveLab 4 Demo</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nomadiq Travel Destinations</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+      background: linear-gradient(to bottom, #e6f7f7, #f0f9f7);
+      color: #2c3e3e;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #5ba27a;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: background-color 0.3s;
+    }
+
+    header:hover {
+      background-color: #51916b;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      transition: transform 0.3s;
+    }
+
+    .logo:hover {
+      transform: scale(1.05);
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      margin: 5px 12px;
+      text-decoration: none;
+      color: white;
+      font-size: 1.05rem;
+      font-weight: 500;
+      transition: color 0.3s, transform 0.2s;
+    }
+
+    nav a:hover {
+      color: #dff7f0;
+      transform: scale(1.1);
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background-color: #dff7f0;
+      transition: background-color 0.3s;
+    }
+
+    .hero:hover {
+      background-color: #cdece6;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      margin-bottom: 25px;
+      color: #2c3e3e;
+      letter-spacing: 0.5px;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 720px;
+      margin: 0 auto 35px auto;
+      line-height: 1.75;
+      color: #3d5555;
+    }
+
+    .hero .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      background-color: #5ba27a;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border-radius: 28px;
+      text-decoration: none;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .hero .btn:hover {
+      background-color: #4c8c67;
+      transform: scale(1.05);
+    }
+
+    /* About Section */
+    .about {
+      padding: 70px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .about h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 25px;
+      color: #2c3e3e;
+      letter-spacing: 0.5px;
+    }
+
+    .about p {
+      font-size: 1.1rem;
+      line-height: 1.75;
+      color: #3d5555;
+    }
+
+    /* Responsive Images */
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+    }
+
+    /* Media Query for larger screens */
+    @media (min-width: 600px) {
+      .hero {
+        padding: 140px 40px;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+      }
+
+      .hero p {
+        font-size: 1.3rem;
+      }
+
+      .about h2 {
+        font-size: 2.5rem;
+      }
+
+      .about p {
+        font-size: 1.2rem;
+      }
+
+      header {
+        padding: 20px 50px;
+      }
+
+      .logo {
+        font-size: 1.9rem;
+      }
+
+      nav a {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
 </head>
-
 <body>
-  Hello world
-  <script src="script.js"></script>
-</body>
 
+  <header>
+    <div class="logo">🌍 Nomadiq Travel Destinations</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Explore Sustainable Travel</h1>
+    <p>
+      Discover new destinations while preserving the planet. At Nomadiq Travel Destinations, we believe in mindful journeys
+      that protect natural environments, support local communities, and inspire lasting connections with the world around us.
+    </p>
+    <a href="#destinations" class="btn">Plan Your Trip</a>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Nomadiq Travel Destinations</h2>
+    <p>
+      Nomadiq Travel Destinations is dedicated to eco-friendly adventures that prioritize sustainability and responsibility.
+      Our mission is to guide travelers toward experiences that minimize environmental impact, celebrate cultural heritage,
+      and foster a deeper appreciation for our planet’s beauty.
+    </p>
+  </section>
+
+</body>
 </html>
